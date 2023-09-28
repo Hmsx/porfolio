@@ -1,0 +1,12 @@
+@media (max-width: 1013px) {
+    .btn__login,
+    .btn__register {
+        padding: 10px 20px 10px;
+    }
+}
+
+@media (max-width: 869px) {
+    .header__burger {
+        display: flex;
+    }
+}
