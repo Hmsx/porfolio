@@ -1,0 +1,459 @@
+@import url("nullstyle.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Josefin+Sans:wght@400;700&family=Roboto&display=swap");
+
+/* base */
+
+body {
+    /* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #333333;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #999999;
+}
+
+/* ==============================================================PAGES========================================================================================= */
+
+.page__hero {
+    padding: 200px 0px;
+}
+.page__price {
+    padding: 160px 0px;
+}
+
+.page__statistics {
+    background-color: #ecf4fd;
+
+    position: relative;
+    padding: 250px 0px 160px;
+}
+.page__statistics::before {
+    content: "";
+    display: block;
+    width: 607px;
+    height: 424px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../img/decor.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.page__capital {
+    padding: 180px 0px;
+}
+
+/* ======================================================================================================================================================== */
+.header {
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    background-image: url("../img/header-Img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #333333;
+}
+.header__burger {
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    display: none;
+}
+.header__burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #333333;
+}
+.header__burger::before,
+.header__burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #333333;
+}
+.header__burger::after {
+    top: 0px;
+}
+.header__burger::before {
+    bottom: 0px;
+}
+
+/* ======================================================================================================================================================== */
+.header__inner {
+    padding: 33px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.header__logo {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #128c76;
+    letter-spacing: 0.06em;
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown-menu__top {
+    display: flex;
+}
+.dropdown-menu__item {
+    position: relative;
+}
+.dropdown-menu__link {
+    transition: all 0.3s linear;
+    padding: 10px 5px 10px;
+}
+
+.dropdown-menu__link:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+.dropdown-menu__item + .dropdown-menu__item {
+    margin-left: 15px;
+}
+
+.dropdown-menu__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dropdown-menu__bottom {
+    position: absolute;
+    top: 40px;
+    display: none;
+    left: 0;
+    width: 180px;
+    text-align: center;
+}
+.dropdown-menu__bottom .dropdown__item {
+    background-color: #128c76;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 5px 10px;
+}
+.dropdown-btn {
+    cursor: pointer;
+    background: url("../img/Down.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.btn__login {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #128c76;
+
+    padding: 16px 40px 14px;
+}
+
+.btn__register {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #f56b8d;
+    padding: 16px 40px 14px;
+    border: 1px solid #f56b8d;
+}
+/* ======================================================================================================================================================== */
+
+.hero__title {
+    max-width: 770px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+}
+.hero__text {
+    padding: 40px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    max-width: 470px;
+}
+.hero__btn {
+    display: inline-block;
+    padding: 24px 22px;
+    background: #128c76;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 270px;
+    text-align: center;
+}
+/* ===================================================================PRICE================================================================================ */
+
+.price__title {
+    text-align: center;
+}
+.price__subtitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.price__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.card--one {
+    box-shadow: 0px 24px 60px rgba(51, 51, 51, 0.16);
+    position: relative;
+}
+.card--two {
+    box-shadow: 0px 80px 120px rgba(51, 51, 51, 0.4);
+    background-color: #333333;
+}
+.card {
+    transition: all 0.3s linear;
+}
+.card--three,
+.card--four,
+.card--five,
+.card--six {
+    position: relative;
+}
+
+.price__card {
+    background-color: #f3f3f3;
+
+    cursor: pointer;
+}
+.card__filters {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    top: 24px;
+    left: 24px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.card:hover .card__filters {
+    opacity: 1;
+}
+.card__filter {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px 6px;
+}
+.card-box {
+    padding: 0px 24px;
+}
+.card-box__info-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+.card-box__info-country {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+}
+.card__image,
+.card-box__info,
+.card-box__text {
+    margin-bottom: 24px;
+}
+.progressbar {
+    width: 100%;
+    height: 8px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+.progressbar::after {
+    content: "";
+    background-color: #128c76;
+    width: 50%;
+    height: 8px;
+    position: absolute;
+    z-index: 0;
+}
+.progressbar {
+    margin-bottom: 8px;
+}
+.card-box__progressbar-value span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #128c76;
+}
+.card__characteristics-box {
+    padding: 24px;
+}
+.card__characteristics-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    min-height: 100%;
+    background-color: #f56b8d;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+.price__btn {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    max-width: 270px;
+    margin: 0 auto;
+}
+.price__btn a {
+    padding: 24px 40px 22px;
+    display: inline-block;
+    border: 1px solid #f56b8d;
+    color: #f56b8d;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all 0.2s ease-in;
+}
+.price__btn a:hover {
+    background-color: #f56b8d;
+    color: #fff;
+}
+/* ======================================================================================================================================================== */
+
+.statistics__inner {
+    display: flex;
+}
+.statistics__info {
+    position: relative;
+    z-index: 3;
+}
+.statistics__info-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.statistics__info-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/decor-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    top: -60%;
+}
+.statistics__info-text {
+    color: #999999;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+/* ======================================================================================================================================================== */
+
+.capital {
+}
+.container {
+}
+.capital__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.capital__info {
+    max-width: 570px;
+}
+
+.capital__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #9999;
+    margin: 24px 0px 40px;
+}
+.capital__btn {
+    display: inline-block;
+    padding: 24px 22px;
+    background: #128c76;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 270px;
+    text-align: center;
+}
+.capital__btn a {
+    color: #fff;
+}
+.capital__img {
+}
